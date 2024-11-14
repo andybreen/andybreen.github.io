@@ -15,6 +15,17 @@
 <div id="twilio-webchat-widget-root"></div>
 <style>
  </style>
+
+<div id="twilio-webchat-widget-root"></div>
+<script>
+  window.addEventListener("load", () => {
+    const appConfig = {
+       deploymentKey: "CV6e8d8b60586ffb0a1e502afa05211fa6"
+    }
+    Twilio.initWebchat(appConfig); 
+  })
+</script>
+  
 <script defer src="https://media.twiliocdn.com/sdk/js/webchat-v3/releases/0.0.0/webchat.min.js"></script>
 <script defer src="https://media.twiliocdn.com/sdk/js/webchat-v3/assets/app.js"></script>
 
