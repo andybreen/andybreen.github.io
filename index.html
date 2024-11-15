@@ -11,6 +11,20 @@
 <body data-theme-pref="light-theme">
   
 
+
+
+  <div id="twilio-webchat-widget-root"></div>
+<script>
+  window.addEventListener("load", () => {
+    const appConfig = {
+       deploymentKey: "CV6e8d8b60586ffb0a1e502afa05211fa6"
+    }
+    Twilio.initWebchat(appConfig); 
+  })
+</script>
+  
+<script defer src="https://media.twiliocdn.com/sdk/js/webchat-v3/releases/1.1.0/webchat.min.js" integrity="sha256-c1l/wwVPqGd5P7Wni+vQ85wSk0UCDqZyUDQRJBKRQO0=" crossorigin="anonymous"></script>  
+
 <button type="button" id="show-cobrowse-jS" onclick="showTerms()">Cobrowse with an Agent Session JavaScript</button>
  <script>
      function showTerms(){
@@ -25,16 +39,7 @@
        }
  </script>
 
-  <div id="twilio-webchat-widget-root"></div>
-<script>
-  window.addEventListener("load", () => {
-    const appConfig = {
-       deploymentKey: "CV6e8d8b60586ffb0a1e502afa05211fa6"
-    }
-    Twilio.initWebchat(appConfig); 
-  })
-</script>
-<script defer src="https://media.twiliocdn.com/sdk/js/webchat-v3/releases/1.1.0/webchat.min.js" integrity="sha256-c1l/wwVPqGd5P7Wni+vQ85wSk0UCDqZyUDQRJBKRQO0=" crossorigin="anonymous"></script>  
+
   
 <script id="glance-cobrowse" charset="UTF-8" type="text/javascript" src="https://www.glancecdn.net/cobrowse/CobrowseJS.ashx?group=24379&site=staging" data-groupid="24379" data-site="staging" data-ws="www.glance.net" data-presence="on" data-video="off" data-visitorid="${customer_phone}" data-cookietype="normal"></script>
 
