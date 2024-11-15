@@ -9,8 +9,26 @@
   <link rel="stylesheet" type="text/css" href="https://media.twiliocdn.com/sdk/js/webchat-v3/assets/app.css"></link>
 </head>
 <body data-theme-pref="light-theme">
-nable JavaScript to run this app.
-</noscript>
+
+      <a href="#" id="show-cobrowse-jS" onclick="showTerms()">Cobrowse with an Agent Session JavaScript</a>
+            
+            <script>
+            function showTerms(){
+                GLANCE.Cobrowse.Visitor.showTerms();
+            }
+            </script>
+
+     <a href="#" id="start-cobrowse-jS" onclick="startSession()">Start Cobrowse Session JavaScript</a>
+            
+            <script>
+            function startSession(){
+                GLANCE.Cobrowse.Visitor.startSession();
+            }
+            </script>
+
+
+  
+  
 
   <div id="twilio-webchat-widget-root"></div>
 <script>
