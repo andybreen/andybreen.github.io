@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME-Tel FAQs</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3E6B00;
+            color: #333;
+        }
+
+        header {
+            background-color: #3E6B00; /* Example color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px; /* Add padding for visual spacing */
+
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer; /* Make the question clickable */
+        }
+
+        .faq-answer {
+            display: none; /* Initially hide the answers */
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed; /* Fixed to the bottom */
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ACME-Tel</h1>
+        <p>Connecting Singapore, One Connection at a Time</p>
+    </header>
+
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">What types of plans do you offer?</div>
+            <div class="faq-answer">
+                We offer a variety of mobile and broadband plans to suit your needs.  Our mobile plans range from basic talk and text packages to high-data plans with unlimited calls. Our broadband plans include fiber optic and wireless options with various speeds and data allowances. Visit our <a href="#">Plans</a> page for details.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I check my mobile data usage?</div>
+            <div class="faq-answer">
+                You can easily check your data usage through our ACME-Tel app or by logging into your account on our website. You can also dial *123# (example short code) from your mobile phone.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What should I do if my broadband connection is down?</div>
+            <div class="faq-answer">
+                First, try restarting your modem and router. If the issue persists, please contact our customer support hotline at 1800-ACME-TEL (example number) or use our live chat support on our website.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How can I pay my bill?</div>
+            <div class="faq-answer">
+                We offer several convenient payment options, including online banking, credit card payments, GIRO, and AXS stations. You can find more information about payment methods on our <a href="#">Billing</a> page.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I contact customer support?</div>
+            <div class="faq-answer">
+                You can reach our customer support team by phone at 1800-ACME-TEL, via email at support@acmetel.com (example email), or through our live chat on our website.
+            </div>
+        </div>
+
+        </div>
+    <footer>
+        &copy; 2023 ACME-Tel. All rights reserved.
+    </footer>
+
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+	
+	
+		<!-- Start of Console Chat code -->
+<div id="console-chat" data-account-id="2" data-project-id="65" data-project-console-id="84" data-profile-id="2"></div>
+<script src="https://console.apac.sabio.cloud/airline-chat-client/static/js/console.index.js" async></script>
+<!-- End of Console Chat code -->
+	
+	
+
+</body>
+</html>
