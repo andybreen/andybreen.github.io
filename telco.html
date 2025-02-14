@@ -9,122 +9,83 @@
             font-family: sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            background-color: #f0f0f0; /* Light gray background */
         }
-
         header {
-            background-color: #f0f0f0;
-            padding: 20px;
-            text-align: center; /* Center the logo */
-        }
-
-        .logo {
-            /* Example styling - replace with your actual logo */
-            width: 200px; /* Adjust as needed */
-            height: auto;
-        }
-
-        .hero {
-            background-image: url('hero-image.jpg'); /* Replace with your hero image */
-            background-size: cover;
-            background-position: center;
+            background-color: #3E6B00;
             color: white;
+            padding: 20px;
             text-align: center;
-            padding: 100px 0;
         }
-
-        .hero h1 {
-            font-size: 3em;
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            text-align: center;
             margin-bottom: 20px;
         }
-
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 40px;
+        img {
+            max-width: 250px; /* Adjust as needed */
+            height: auto;
+            margin: 10px;
         }
-
-        .cta-button {
+        h1, h2 {
+            color: #3E6B00;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
             display: inline-block;
-            padding: 15px 30px;
-            background-color: #007bff; /* Example color */
+            padding: 10px 20px;
+            background-color: #3E6B00;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            margin: 5px;
         }
-
-
-        .features {
-            padding: 40px;
+        .award {
             text-align: center;
-        }
-
-        .feature {
-            display: inline-block;
-            width: 30%;
-            margin: 20px;
-            vertical-align: top; /* Align items to the top */
-        }
-
-        .feature img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <img class="logo" src="acme-tel-logo.png" alt="ACME-Tel Logo">  </header>
+        <img src="acme_logo.png" alt="ACME-Tel Logo" style="max-width: 150px;">  </header>
 
-    <section class="hero">
-        <h1>Experience Seamless Connectivity</h1>
-        <p>ACME-Tel provides lightning-fast broadband and reliable mobile services tailored to your needs.</p>
-        <a href="#" class="cta-button">Explore Our Plans</a>
-    </section>
+    <div class="container">
+        <h1>Welcome to ACME-Tel</h1>
+        <p>Connecting you with lightning-fast broadband and reliable mobile services.</p>
 
-    <section class="features">
-        <div class="feature">
-            <img src="mobile-phone-image.jpg" alt="Mobile Phone">
-            <h2>Mobile Plans</h2>
-            <p>Stay connected on the go with our flexible and affordable mobile plans.</p>
-            <a href="#" class="cta-button">View Plans</a>
+        <div class="image-container">
+            <img src="mobile_phone.jpg" alt="Mobile Phone">
+            <img src="broadband_router.jpg" alt="Broadband Router">
         </div>
-        <div class="feature">
-            <img src="broadband-router-image.jpg" alt="Broadband Router">
-            <h2>Broadband Deals</h2>
-            <p>Experience blazing-fast internet speeds with our award-winning broadband packages.  Awarded "Fastest Broadband 2024" by ConnectWise Magazine.</p>
-            <a href="#" class="cta-button">See Deals</a>
+
+        <h2>Experience the Difference</h2>
+        <p>We're committed to providing our customers with the best possible connectivity experience.  Our superfast broadband has been recognized by "FastConnect Awards" as the '2024 Fastest Broadband Provider' (Fictional Award).</p>
+
+        <div class="button-container">
+            <a href="mobile_plans.html" class="button">Mobile Plans</a>
+            <a href="broadband_deals.html" class="button">Broadband Deals</a>
+            <a href="phones.html" class="button">Phones</a>
+            <a href="coverage_checker.html" class="button">Mobile Coverage Checker</a>
         </div>
-        <div class="feature">
-            <img src="new-phone-image.jpg" alt="New Phone">
-            <h2>Latest Phones</h2>
-            <p>Upgrade to the latest smartphones with our competitive device deals.</p>
-            <a href="#" class="cta-button">Browse Phones</a>
+
+        <div class="award">
+            "2024 Fastest Broadband Provider" - FastConnect Awards (Fictional)
         </div>
-    </section>
-
-    <footer>
-        &copy; 2024 ACME-Tel. All rights reserved.
-    </footer>
-
-    <!-- Start of Console Chat code -->
-<div id="console-chat" data-account-id="2" data-project-id="65" data-project-console-id="84" data-profile-id="2"></div>
-<script src="https://console.apac.sabio.cloud/airline-chat-client/static/js/console.index.js" async></script>
-<!-- End of Console Chat code -->
-
+    </div>
 
 </body>
 </html>
-
-
 
 
 
